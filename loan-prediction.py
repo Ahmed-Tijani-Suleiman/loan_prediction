@@ -133,14 +133,7 @@ st.write('---')
 st.write('')
 
 
-with st.container():
-    right_column, left_column = st.columns(2)
-    with right_column:
 
-       
-
-    with left_column:
-        st_lottie(animation_contact, speed=1, height=200, key="third")
 
 
 footer="""<style>
