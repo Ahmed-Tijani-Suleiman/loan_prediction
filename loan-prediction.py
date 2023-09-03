@@ -112,10 +112,10 @@ with st.container():
         if st.button('Predict with LR model'):
             pp = loaded_model_LR.predict(sample)
             if pp == 1:
-                st.success("Congratulation..!! Your Loan has been accepted")
+                st.success("Congratulations! Your Loan Request Is Approved")
                 st.balloons()
             else:
-                st.write("Sorry..!! Your Loan has been rejected")
+                st.write("Sorry! Your Loan Request is Declined")
 
     with left_column:
 
@@ -123,10 +123,10 @@ with st.container():
         if st.button('Predict with RF model'):
             pp2 = loaded_model_RF.predict(sample)
             if pp2 == 1:
-                st.success("Congratulation..!! Your Loan has been acceptd")
+                st.success("Congratulations! Your Loan Request Is Approved")
                 st.balloons()
             else:
-                st.write("Sorry..!! Your Loan has been refused")
+                st.write("Sorry! Your Loan Request is Declined")
                 
 
 st.write('---')
